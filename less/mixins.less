@@ -1,4 +1,5 @@
 // Mixins
+    //fontstyles
 .hFontProp (@size, @weight, @color, @font){
     font-size: @size;
     font-weight: @weight;
@@ -12,7 +13,15 @@
     color: @color;
     font-family: @font; 
 }
-
+ // displaystyles
+.mdisplay {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.borderDashed{
+    border-bottom: 2px grey dashed;
+}
 // exits
 
 @tablet: ~'(min-width: 500px)';

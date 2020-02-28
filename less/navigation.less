@@ -1,12 +1,14 @@
 // Navigations
 
 .navBar {
-   width:100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width:100%;
+    background-color: @bkgColor;
+    .mdisplay;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center; 
     @media @tablet {
-        border-bottom: 2px grey dashed;
+        .borderDashed;
     }
     @media @desk {
         flex-direction: row-reverse;
@@ -17,7 +19,7 @@
     .navTitle{
         text-align: center;
         .hFontProp(2.5rem, 300, red, @hFont);
-       width: 100%;
+        width: 100%;
        
        @media @desk{
            padding-right: 2%;
@@ -26,10 +28,10 @@
     }
     .navList {
         width: 100%;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
+        .mdisplay;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
         // background-color:blue;
         @media @tablet {
             flex-direction: row;
@@ -39,7 +41,6 @@
         a {
             padding: 2% 0;
             text-decoration: none;
-            border-bottom: 2px solid grey;
             text-align: center;
             @media @tablet {
             border-bottom: none;

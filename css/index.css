@@ -150,6 +150,14 @@ table {
   font-display: swap;
   src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(https://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Ceg.ttf) format('truetype');
 }
+.mdisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.borderDashed {
+  border-bottom: 2px grey dashed;
+}
 .container {
   margin: 0 5%;
 }
@@ -160,6 +168,9 @@ table {
   font-family: 'Permanent Marker';
   width: 75px;
   border-radius: 50%;
+  background-color: #4169E1;
+  border: none;
+  cursor: pointer;
 }
 @media (min-width: 500px) {
   .btn {
@@ -175,9 +186,11 @@ table {
 }
 .btn:hover {
   color: blue;
+  background-color: #00FF7F;
 }
 .navBar {
   width: 100%;
+  background-color: peachpuff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -211,7 +224,6 @@ table {
 .navBar .navList {
   width: 100%;
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
 }
@@ -225,7 +237,6 @@ table {
 .navBar .navList a {
   padding: 2% 0;
   text-decoration: none;
-  border-bottom: 2px solid grey;
   text-align: center;
 }
 @media (min-width: 500px) {
@@ -292,8 +303,14 @@ table {
 @media (min-width: 500px) {
   .intro .mainHead .headImg .headerImg {
     margin: 2% 0;
+    width: 80%;
     border-radius: 25%;
     border: 1px black solid;
+  }
+}
+@media (min-width: 800px) {
+  .intro .mainHead .headImg .headerImg {
+    width: 60%;
   }
 }
 .mainContent .vision .visionHead {
