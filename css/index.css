@@ -1,0 +1,352 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Akronim';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Akronim Regular'), local('Akronim-Regular'), url(https://fonts.gstatic.com/s/akronim/v9/fdN-9sqWtWZZlHRpygd7lA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Pen Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nanum Pen'), local('NanumPen'), url(https://fonts.gstatic.com/s/nanumpenscript/v15/daaDSSYiLGqEal3MvdA_FOL_3FkN6zn0bA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v14/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMQg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(https://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Ceg.ttf) format('truetype');
+}
+.container {
+  margin: 0 5%;
+}
+.btn {
+  font-size: 0.75rem;
+  font-weight: light;
+  color: black;
+  font-family: 'Permanent Marker';
+  width: 75px;
+  border-radius: 50%;
+}
+@media (min-width: 500px) {
+  .btn {
+    font-size: 1rem;
+    width: 100px;
+  }
+}
+@media (min-width: 800px) {
+  .btn {
+    font-size: 1.25rem;
+    width: 150px;
+  }
+}
+.btn:hover {
+  color: blue;
+}
+.navBar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 500px) {
+  .navBar {
+    border-bottom: 2px grey dashed;
+  }
+}
+@media (min-width: 800px) {
+  .navBar {
+    flex-direction: row-reverse;
+    justify-items: flex-end;
+    border-bottom: 2px grey dashed;
+  }
+}
+.navBar .navTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: red;
+  font-family: 'akronim';
+  width: 100%;
+}
+@media (min-width: 800px) {
+  .navBar .navTitle {
+    padding-right: 2%;
+    width: 50%;
+  }
+}
+.navBar .navList {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 500px) {
+  .navBar .navList {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+.navBar .navList a {
+  padding: 2% 0;
+  text-decoration: none;
+  border-bottom: 2px solid grey;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  .navBar .navList a {
+    border-bottom: none;
+  }
+}
+.intro {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.intro .mainHead {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 15px;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  .intro .mainHead {
+    flex-direction: row;
+  }
+}
+.intro .mainHead .headText {
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .intro .mainHead .headText {
+    width: 49%;
+  }
+}
+.intro .mainHead .headText .introText {
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  font-family: 'akronim';
+  margin: 2% 0 ;
+}
+@media (min-width: 500px) {
+  .intro .mainHead .headText .introText {
+    margin-left: 2%;
+  }
+}
+@media (min-width: 800px) {
+  .intro .mainHead .headText .introText {
+    padding-top: 2%;
+    font-size: 6rem;
+  }
+}
+.intro .mainHead .headImg {
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .intro .mainHead .headImg {
+    width: 49%;
+  }
+}
+.intro .mainHead .headImg .headerImg {
+  width: 100%;
+  border: 1px black solid;
+}
+@media (min-width: 500px) {
+  .intro .mainHead .headImg .headerImg {
+    margin: 2% 0;
+    border-radius: 25%;
+    border: 1px black solid;
+  }
+}
+.mainContent .vision .visionHead {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: black;
+  font-family: 'akronim';
+}
+@media (min-width: 500px) {
+  .mainContent .vision .visionHead {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 800px) {
+  .mainContent .vision .visionHead {
+    font-size: 2.5rem;
+  }
+}
+.mainContent .vision .visionText {
+  font-size: 1rem;
+  font-weight: light;
+  color: black;
+  font-family: 'Nanum Pen Script';
+}
+@media (min-width: 500px) {
+  .mainContent .vision .visionText {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 800px) {
+  .mainContent .vision .visionText {
+    font-size: 1.5rem;
+  }
+}
+footer {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: peachpuff;
+  margin-top: 10px;
+}
+@media (min-width: 500px) {
+  footer {
+    height: 50px;
+    border-top: 2px grey dashed;
+  }
+}
+footer .footer {
+  font-size: 0.75rem;
+  font-weight: light;
+  color: black;
+  font-family: 'Permanent Marker';
+  text-align: center;
+}
