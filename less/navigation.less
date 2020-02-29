@@ -1,6 +1,7 @@
 // Navigations
 
 .navBar {
+    
     width:100%;
     background-color: @bkgColor;
     .mdisplay;
@@ -9,6 +10,9 @@
     // align-items: center; 
     @media @tablet {
         .borderDashed;
+        overflow:hidden;
+        position: fixed;
+        top: 0;
     }
     @media @desk {
         flex-direction: row-reverse;

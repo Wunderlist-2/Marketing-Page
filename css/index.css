@@ -190,7 +190,7 @@ table {
 }
 .navBar {
   width: 100%;
-  background-color: peachpuff;
+  background-color: #F5FFFA;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,6 +198,9 @@ table {
 @media (min-width: 500px) {
   .navBar {
     border-bottom: 2px grey dashed;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
   }
 }
 @media (min-width: 800px) {
@@ -254,12 +257,18 @@ table {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  margin: 15px;
+  margin-top: 10px;
   text-align: center;
 }
 @media (min-width: 500px) {
   .intro .mainHead {
     flex-direction: row;
+    margin-top: 100px;
+  }
+}
+@media (min-width: 800px) {
+  .intro .mainHead {
+    margin-top: 70px;
   }
 }
 .intro .mainHead .headText {
@@ -297,7 +306,7 @@ table {
   }
 }
 .intro .mainHead .headImg .headerImg {
-  width: 100%;
+  width: 95%;
   border: 1px black solid;
 }
 @media (min-width: 500px) {
@@ -345,13 +354,67 @@ table {
     font-size: 1.5rem;
   }
 }
+.introTeam {
+  width: 100%;
+  display: flex;
+}
+.introTeam .teamHead {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px blue solid;
+  margin-top: 10px;
+}
+@media (min-width: 500px) {
+  .introTeam .teamHead {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+  }
+}
+@media (min-width: 800px) {
+  .introTeam .teamHead {
+    margin-top: 70px;
+  }
+}
+.introTeam .teamHead .headText {
+  width: 100%;
+  border: 1px red solid;
+}
+@media (min-width: 500px) {
+  .introTeam .teamHead .headText {
+    width: 49%;
+  }
+}
+.introTeam .teamHead .introTeam {
+  font-size: 3rem;
+  font-weight: 300;
+  color: black;
+  font-family: 'akronim';
+  border: green 1px solid;
+  margin: 2% 0 ;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  .introTeam .teamHead .introTeam {
+    margin-left: 2%;
+    font-size: 4rem;
+  }
+}
+@media (min-width: 800px) {
+  .introTeam .teamHead .introTeam {
+    padding-top: 2%;
+    font-size: 6rem;
+  }
+}
 footer {
   width: 100%;
   height: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: peachpuff;
+  background-color: #F5FFFA;
   margin-top: 10px;
 }
 @media (min-width: 500px) {

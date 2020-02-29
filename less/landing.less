@@ -13,11 +13,15 @@ align-items: center;
         flex-direction: column-reverse;
         align-items: center;
         // border: 1px blue solid;
-        margin: 15px;
+       margin-top: 10px;
         text-align: center;
             
             @media @tablet {
                 flex-direction: row;
+                margin-top: 100px;
+            }
+            @media @desk {
+                margin-top: 70px;
             }
     .headText {    
         width: 100%;
@@ -48,7 +52,7 @@ align-items: center;
             width: 49%;
         }
     .headerImg{
-    width:100%;
+    width:95%;
     border: 1px black solid;
     
         @media @tablet {
@@ -90,4 +94,51 @@ align-items: center;
                 }
         }
     }
+}
+// team
+.introTeam{
+width: 100%;
+display: flex;
+
+.teamHead {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px blue solid;
+    
+    
+    margin-top: 10px;
+        
+        @media @tablet {
+            flex-direction: row;
+           justify-content: center;
+            margin-top: 100px;
+        }
+        @media @desk {
+            margin-top: 70px;
+        }
+        .headText {    
+            width: 100%;
+            border: 1px red solid;
+            @media @tablet {
+                
+                width: 49%;
+                }             
+}
+.introTeam {
+    .hFontProp(3rem, 300,black, @hFont);
+    border: green 1px solid;
+    margin:2% 0 ;
+        text-align: center;
+    @media @tablet{
+            margin-left: 2%;
+            font-size: 4rem;
+        }
+            @media @desk {
+                padding-top: 2%;
+                font-size: 6rem;
+            }
+}
+}
 }
