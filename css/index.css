@@ -406,7 +406,6 @@ table {
   }
 }
 .theTeam {
-  border: 1px black solid;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -415,13 +414,17 @@ table {
   .theTeam {
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 10px;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
+}
+.theTeam .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media (min-width: 800px) {
   .theTeam .box {
-    width: 50%;
+    width: 33%;
   }
 }
 .theTeam .box .imgDiv {
@@ -432,17 +435,43 @@ table {
   border-radius: 50%;
   padding: 1%;
 }
+@media (min-width: 500px) {
+  .theTeam .box .imgDiv .teamMate {
+    width: 200px;
+  }
+}
 .theTeam .box .teamText h3 {
   font-size: 1.5rem;
   font-weight: 300;
   color: black;
   font-family: 'akronim';
 }
+@media (min-width: 500px) {
+  .theTeam .box .teamText h3 {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 800px) {
+  .theTeam .box .teamText h3 {
+    font-size: 2rem;
+  }
+}
 .theTeam .box .teamText p {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: light;
   color: black;
   font-family: 'Nanum Pen Script';
+  text-align: center;
+}
+@media (min-width: 500px) {
+  .theTeam .box .teamText p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 800px) {
+  .theTeam .box .teamText p {
+    font-size: 1.75rem;
+  }
 }
 .theTeam .box .gitLink {
   padding: 10px 0px;

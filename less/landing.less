@@ -139,21 +139,21 @@ width: 100%;
 }
 
 .theTeam {
-     border: 1px black solid;
+    //  border: 1px black solid;
    
     .mdisplay;
     @media @tablet{
         flex-direction: row;
-        flex-wrap: wrap;
-        margin: 0 10px;
-        justify-content: space-around;
-        
+        flex-wrap: wrap;  
+        justify-content: space-evenly;
     }
     
   .box {
-    //   border:1px solid red;
+    // border:1px solid red;
+    .mdisplay;
+    
     @media @desk {
-        width: 50%;
+        width: 33%;
     }
     .imgDiv {
         width: min-content;
@@ -164,15 +164,32 @@ width: 100%;
             border-radius: 50%;
             padding: 1%;
             // border: 1px red solid;
+            @media @tablet {
+                width: 200px;
+            }
         }
     }
     .teamText{
+        
         h3 {
         .hFontProp(1.5rem, 300,black, @hFont);
+        @media @tablet {
+            font-size: 1.75rem;
+        }
+        @media @desk {
+            font-size: 2rem;
+        }
         // border-bottom: 1px grey dashed;
         }
         p{
-        .textFontProp(1rem, light, black, @tFont2);
+        .textFontProp(1.25rem, light, black, @tFont2);
+        text-align: center;
+        @media @tablet {
+            font-size: 1.5rem;
+        }
+        @media @desk{
+            font-size: 1.75rem;
+        }
         }
     }
     .gitLink{
