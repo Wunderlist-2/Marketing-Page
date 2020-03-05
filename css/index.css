@@ -357,13 +357,11 @@ table {
 .introTeam {
   width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .introTeam .teamHead {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px blue solid;
   margin-top: 10px;
 }
 @media (min-width: 500px) {
@@ -392,7 +390,6 @@ table {
   font-weight: 300;
   color: black;
   font-family: 'akronim';
-  border: green 1px solid;
   margin: 2% 0 ;
   text-align: center;
 }
@@ -407,6 +404,78 @@ table {
     padding-top: 2%;
     font-size: 6rem;
   }
+}
+.theTeam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 500px) {
+  .theTeam {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+.theTeam .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  .theTeam .box {
+    width: 33%;
+  }
+}
+.theTeam .box .imgDiv {
+  width: min-content;
+}
+.theTeam .box .imgDiv .teamMate {
+  width: 300px;
+  border-radius: 50%;
+  padding: 1%;
+}
+@media (min-width: 500px) {
+  .theTeam .box .imgDiv .teamMate {
+    width: 200px;
+  }
+}
+.theTeam .box .teamText h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: black;
+  font-family: 'akronim';
+  text-align: center;
+}
+@media (min-width: 500px) {
+  .theTeam .box .teamText h3 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 800px) {
+  .theTeam .box .teamText h3 {
+    font-size: 2.25rem;
+  }
+}
+.theTeam .box .teamText p {
+  font-size: 1.25rem;
+  font-weight: light;
+  color: black;
+  font-family: 'Nanum Pen Script';
+  text-align: center;
+}
+@media (min-width: 500px) {
+  .theTeam .box .teamText p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 800px) {
+  .theTeam .box .teamText p {
+    font-size: 1.75rem;
+  }
+}
+.theTeam .box .gitLink {
+  padding: 10px 0px;
 }
 footer {
   width: 100%;

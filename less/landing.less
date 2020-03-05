@@ -13,7 +13,7 @@ align-items: center;
         flex-direction: column-reverse;
         align-items: center;
         // border: 1px blue solid;
-       margin-top: 10px;
+        margin-top: 10px;
         text-align: center;
             
             @media @tablet {
@@ -98,16 +98,11 @@ align-items: center;
 // team
 .introTeam{
 width: 100%;
-display: flex;
-
+.mdisplay;
 .teamHead {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px blue solid;
-    
-    
+   
+    // border: 1px blue solid;
     margin-top: 10px;
         
         @media @tablet {
@@ -128,7 +123,7 @@ display: flex;
 }
 .introTeam {
     .hFontProp(3rem, 300,black, @hFont);
-    border: green 1px solid;
+    // border: green 1px solid;
     margin:2% 0 ;
         text-align: center;
     @media @tablet{
@@ -140,5 +135,66 @@ display: flex;
                 font-size: 6rem;
             }
 }
+}
+}
+
+.theTeam {
+    //  border: 1px black solid;
+   
+    .mdisplay;
+    @media @tablet{
+        flex-direction: row;
+        flex-wrap: wrap;  
+        justify-content: space-evenly;
+    }
+    
+  .box {
+    // border:1px solid red;
+    .mdisplay;
+    
+    @media @desk {
+        width: 33%;
+    }
+    .imgDiv {
+        width: min-content;
+        // border: 1px green solid;
+       
+        .teamMate{
+            width: 300px;
+            border-radius: 50%;
+            padding: 1%;
+            // border: 1px red solid;
+            @media @tablet {
+                width: 200px;
+            }
+        }
+    }
+    .teamText{
+        
+        h3 {
+        .hFontProp(1.5rem, 300,black, @hFont);
+        text-align: center;
+        @media @tablet {
+            font-size: 2rem;
+        }
+        @media @desk {
+            font-size: 2.25rem;
+        }
+        // border-bottom: 1px grey dashed;
+        }
+        p{
+        .textFontProp(1.25rem, light, black, @tFont2);
+        text-align: center;
+        @media @tablet {
+            font-size: 1.5rem;
+        }
+        @media @desk{
+            font-size: 1.75rem;
+        }
+        }
+    }
+    .gitLink{
+        padding: 10px 0px;
+    }
 }
 }
